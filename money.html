@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-exchange</title>
+    <link rel="stylesheet" href="money.css">
+</head>
+<body>
+      <div id="outer-box">
+        <div id="Heading">Money Exchange Calculator</div>
+        <form>
+           
+            <input type="number" id="amount" name="age" min="1"   placeholder="Enter the amount" required>
+            <div id="country">
+            <div id="country1" class="country">
+                <div class="img" id="img1"></div>
+                <select id="option1" name="money" class="option">
+                    <option value="inr" selected>Inr</option>
+                    <option value="usd">usd</option>
+                    <option value="euro">euro</option>
+                    <option value="taka">taka</option>
+                  </select>
+            </div>
+            <div id="reverse"></div>
+            <div id="country2" class="country">
+                <div class="img" id="img2"></div>
+                <select id="option2" name="money" class="option">
+                    <option value="inr">Inr</option>
+                    <option value="usd" selected>usd</option>
+                    <option value="euro">euro</option>
+                    <option value="taka">taka</option>
+                  </select>
+            </div>
+            </div>
+            <div id="message">hi</div>
+            <input type="submit" value="Reload" id="reload">
+
+
+        </form>
+      </div>
+
+
+
+    <script src="money.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
