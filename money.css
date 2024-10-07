@@ -44,6 +44,11 @@ body {
   }
   
   /* Heading with improved style */
+  #heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   #Heading {
     color: rgb(148, 244, 104);
     margin-bottom: 15px;
@@ -75,17 +80,18 @@ body {
   
   /* Image with hover effect */
   .img {
-    height: 30px;
-    width: 45px;
-    border: 2px solid black;
-    margin-left: 8px;
+    height: 50px;
+    width: 60px;
+   
+    margin-left: 2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Image shadow */
+    
+    display: flex;
+    
   }
   
   .img:hover {
-    transform: scale(1.15); /* Slightly increase size on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+    
     cursor: pointer;
   }
   
@@ -154,4 +160,40 @@ body {
     transform: scale(1.05); /* Slightly enlarge on hover */
     cursor: pointer;
   }
+  #img1{
+    background-image: url("https://flagsapi.com/IN/flat/64.png");
+   
+    background-size: cover;
+    padding: 0%;
+
+  }
+  #img2{
+    background-image: url("https://flagsapi.com/US/flat/64.png");
+   
+    background-size: cover;
+    padding: 0%;
+
+  }
+  i {
+    color: black;
+    margin-top: 36px;
+    font-size: larger;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  i:hover {
+    color: rgb(6, 88, 60); /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the text on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    cursor: pointer;
+  }
+  
+  i:active {
+    color: rgb(255, 0, 0); /* Change color to red when clicked */
+    transform: scale(0.95); /* Slightly shrink the element when clicked */
+    text-shadow: none; /* Remove text shadow on active */
+    transition: transform 0.1s ease; /* Faster transition for active effect */
+  }
+  
+  
   
